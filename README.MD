@@ -1,4 +1,4 @@
-1. Projekt
+# Projekt
 
 In diesem Projekt wird der Zusammenhang zwischen wahrgenommenem Stress, Schlaf (Dauer und Qualität) und subjektivem Wohlbefinden untersucht.
 Ziel ist es, zentrale Zusammenhänge zu analysieren und zu prüfen, ob Stress ein signifikanter Prädiktor für das Wohlbefinden ist.
@@ -8,31 +8,31 @@ Hintergrund dieser Arbeit ist es die Arbeitschritte zu einer Projekterstellung s
 
 
 
-Methodisches Vorgehen
+## Methodisches Vorgehen
 
-1. Datenbereinigung
+### Datenbereinigung
 •	Prüfung auf fehlende Werte
 •	Identifikation potenzieller Ausreißer mittels Boxplots
 Es wurden keine fehlenden Werte gefunden. Einzelne Ausreißer lagen im erwartbaren Wertebereich und wurden nicht entfernt.
 
-2. Explorative Analyse
+### Explorative Analyse
 •	Deskriptive Statistiken (Übersicht der Variablen)
 •	Korrelationsanalyse zwischen den Hauptvariablen
 
-3. Regressionsanalyse
+### Regressionsanalyse
 Zur Untersuchung der Prädiktoren des Wohlbefindens wurde eine multiple lineare Regression durchgeführt.
 Modell:
 •	AV: Wohlbefinden
 •	UVs: Stress, Schlafdauer, Schlafqualität
 
-4. Moderationsanalyse
+### Moderationsanalyse
 Zusätzlich wurde geprüft, ob der Zusammenhang zwischen Stress und Wohlbefinden moderiert wird durch:
 •	Geschlecht
 •	Alter
 Hierfür wurden Interaktionsterme in das Regressionsmodell aufgenommen.
 
-Ergebnisse:
-Korrelationen
+## Ergebnisse:
+### Korrelationen
 
 Starker negativer Zusammenhang zwischen Stress und Wohlbefinden
 ![Stress und Wohlbefinden](plots/stress_wellbeing.png)
@@ -44,17 +44,17 @@ Es zeigt sich ein positiver Zusammenhang zwischen Schlafqualität und Wohlbefind
 
 •	Schwächerer positiver Zusammenhang zwischen Schlafdauer und Wohlbefinden
 
-Regression
+### Regression
 •	Stress ist ein signifikanter negativer Prädiktor des Wohlbefindens
 •	Schlafdauer und Schlafqualität sind signifikante positive Prädiktoren
 •	Das Modell erklärt einen großen Anteil der Varianz (R² ≈ 0.62)
 
-Moderation
+### Moderation
 •	Keine signifikante Moderation durch Geschlecht
 •	Keine signifikante Moderation durch Alter
 → Der Zusammenhang zwischen Stress und Wohlbefinden ist stabil über verschiedene Gruppen hinweg.
 
-Diagnostik
+## Diagnostik
 Die Modellannahmen wurden anhand grafischer Diagnostik überprüft.
 Die Residuen zeigten eine weitgehend zufällige Verteilung ohne systematische Muster, was auf die Erfüllung der Linearitätsannahme hindeutet.
 Der Q-Q-Plot deutete auf eine annähernde Normalverteilung der Residuen hin, mit lediglich geringen Abweichungen in den Randbereichen.
@@ -63,7 +63,7 @@ Zudem ergaben sich keine Hinweise auf stark einflussreiche Beobachtungen.
 
 ![Diagnostik](plots/diagnostic_plots.png)
 
-Standardisierung
+## Standardisierung
 Zur besseren Vergleichbarkeit der Effekte wurden alle kontinuierlichen Variablen (Stress, Schlafdauer, Schlafqualität und Wohlbefinden) standardisiert (z-Transformation).
 
 Dabei wurden die Variablen so transformiert, dass sie einen Mittelwert von 0 und eine Standardabweichung von 1 aufweisen. 
@@ -72,21 +72,21 @@ Stress (β = -0.63) → stärkster Effekt
 Schlafqualität (β = 0.34) → mittlerer Effekt
 Schlafdauer (β = 0.30) → etwas schwächer
 
-Fazit
+## Fazit
 Die Ergebnisse zeigen, dass insbesondere Stress einen starken Einfluss auf das subjektive Wohlbefinden hat, während Schlaf – sowohl in Dauer als auch Qualität – einen positiven Beitrag leistet.
 Die Zusammenhänge bleiben unabhängig von Alter und Geschlecht stabil, was auf robuste Effekte innerhalb des Datensatzes hindeutet.
 
-Limitationen
+## Limitationen
 •	Simulierter Datensatz
 •	Keine kausalen Schlussfolgerungen möglich
 •	Keine Item-basierten Skalen (keine Reliabilitätsanalyse)
 
-Ausblick
+## Ausblick
 Zukünftige Projekte könnten beinhalten:
 •	Analyse von Item-Daten
 •	Skalenkonstruktion und Reliabilitätsprüfung (z. B. Cronbach’s Alpha)
 •	Faktorenanalysen (EFA / CFA)
 
-Verwendete Tools
+## Verwendete Tools
 •	R
 
