@@ -33,11 +33,12 @@ Hierfür wurden Interaktionsterme in das Regressionsmodell aufgenommen.
 
 Ergebnisse:
 Korrelationen
-•	Starker negativer Zusammenhang zwischen Stress und Wohlbefinden
+
+Starker negativer Zusammenhang zwischen Stress und Wohlbefinden
 ![Stress und Wohlbefinden](plots/stress_wellbeing.png)
 Die Visualisierung zeigt einen deutlichen negativen Zusammenhang zwischen Stress und Wohlbefinden.
 
-•	Moderater positiver Zusammenhang zwischen Schlafqualität und Wohlbefinden
+Moderater positiver Zusammenhang zwischen Schlafqualität und Wohlbefinden
 ![Schlafqualität und Wohlbefinden](plots/sleep_quality_wellbeing.png)
 Es zeigt sich ein positiver Zusammenhang zwischen Schlafqualität und Wohlbefinden.
 
