@@ -6,13 +6,13 @@ The purpose of this project is to understand the workflow of a data analysis pro
 
 ## Methodology
 ### Data Cleaning
-Checked for missing values
-Identified potential outliers using boxplots
+- Checked for missing values
+- Identified potential outliers using boxplots
 No missing values were found. Some outliers were detected but remained within a plausible range and were therefore retained.
 
 ### Exploratory Analysis
-Descriptive statistics (overview of variables)
-Correlation analysis between key variables
+- Descriptive statistics (overview of variables)
+- Correlation analysis between key variables
 
 ### Regression Analysis
 A multiple linear regression was conducted to examine predictors of wellbeing.
