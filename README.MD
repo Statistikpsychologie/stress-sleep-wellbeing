@@ -1,92 +1,87 @@
-# Projekt
+# Project Overview
 
-In diesem Projekt wird der Zusammenhang zwischen wahrgenommenem Stress, Schlaf (Dauer und Qualität) und subjektivem Wohlbefinden untersucht.
-Ziel ist es, zentrale Zusammenhänge zu analysieren und zu prüfen, ob Stress ein signifikanter Prädiktor für das Wohlbefinden ist.
-Der Datensatz wurde zu Übungszwecken durch ChatGPT simuliert. Die Analyse sowie Teile der Struktur und Formulierungen wurden mit Unterstützung von ChatGPT entwickelt.
+This project examines the relationship between perceived stress, sleep (duration and quality), and subjective wellbeing. The main objective is to analyze key associations and to test whether stress is a significant predictor of wellbeing.
+The dataset was artificially generated using ChatGPT for practice purposes. The analysis, as well as parts of the structure and wording, were supported by ChatGPT.
+The purpose of this project is to understand the workflow of a data analysis project and to gain experience using GitHub as a portfolio tool.
 
-Hintergrund dieser Arbeit ist es die Arbeitschritte zu einer Projekterstellung sowie den Umgang mit GITHub als Portfolio zu verstehen. 
+## Methodology
+### Data Cleaning
+Checked for missing values
+Identified potential outliers using boxplots
+No missing values were found. Some outliers were detected but remained within a plausible range and were therefore retained.
 
+### Exploratory Analysis
+Descriptive statistics (overview of variables)
+Correlation analysis between key variables
 
+### Regression Analysis
+A multiple linear regression was conducted to examine predictors of wellbeing.
+Dependent variable: Wellbeing
+Independent variables: Stress, sleep duration, sleep quality
 
-## Methodisches Vorgehen
+### Moderation Analysis
+It was further tested whether the relationship between stress and wellbeing is moderated by:
+Gender
+Age
+Interaction terms were included in the regression models.
 
-### Datenbereinigung
-•	Prüfung auf fehlende Werte
-•	Identifikation potenzieller Ausreißer mittels Boxplots
-Es wurden keine fehlenden Werte gefunden. Einzelne Ausreißer lagen im erwartbaren Wertebereich und wurden nicht entfernt.
-
-### Explorative Analyse
-•	Deskriptive Statistiken (Übersicht der Variablen)
-•	Korrelationsanalyse zwischen den Hauptvariablen
-
-### Regressionsanalyse
-Zur Untersuchung der Prädiktoren des Wohlbefindens wurde eine multiple lineare Regression durchgeführt.
-Modell:
-•	AV: Wohlbefinden
-•	UVs: Stress, Schlafdauer, Schlafqualität
-
-### Moderationsanalyse
-Zusätzlich wurde geprüft, ob der Zusammenhang zwischen Stress und Wohlbefinden moderiert wird durch:
-•	Geschlecht
-•	Alter
-Hierfür wurden Interaktionsterme in das Regressionsmodell aufgenommen.
-
-## Ergebnisse:
-### Korrelationen
-
-Starker negativer Zusammenhang zwischen Stress und Wohlbefinden
+## Results
+### Correlations
+Strong negative relationship between stress and wellbeing
 ![Stress und Wohlbefinden](plots/stress_wellbeing.png)
-Die Visualisierung zeigt einen deutlichen negativen Zusammenhang zwischen Stress und Wohlbefinden.
 
-Moderater positiver Zusammenhang zwischen Schlafqualität und Wohlbefinden
+Moderate positive relationship between sleep quality and wellbeing
 ![Schlafqualität und Wohlbefinden](plots/sleep_quality_wellbeing.png)
-Es zeigt sich ein positiver Zusammenhang zwischen Schlafqualität und Wohlbefinden.
 
-•	Schwächerer positiver Zusammenhang zwischen Schlafdauer und Wohlbefinden
+Weaker positive relationship between sleep duration and wellbeing
+
+Visualizations support these relationships.
 
 ### Regression
-•	Stress ist ein signifikanter negativer Prädiktor des Wohlbefindens
-•	Schlafdauer und Schlafqualität sind signifikante positive Prädiktoren
-•	Das Modell erklärt einen großen Anteil der Varianz (R² ≈ 0.62)
+Stress is a significant negative predictor of wellbeing
+Sleep duration and sleep quality are significant positive predictors
+The model explains a substantial proportion of variance (R² ≈ 0.62)
 
 ### Moderation
-•	Keine signifikante Moderation durch Geschlecht
-•	Keine signifikante Moderation durch Alter
-→ Der Zusammenhang zwischen Stress und Wohlbefinden ist stabil über verschiedene Gruppen hinweg.
+No significant moderation by gender
+No significant moderation by age
 
-## Diagnostik
-Die Modellannahmen wurden anhand grafischer Diagnostik überprüft.
-Die Residuen zeigten eine weitgehend zufällige Verteilung ohne systematische Muster, was auf die Erfüllung der Linearitätsannahme hindeutet.
-Der Q-Q-Plot deutete auf eine annähernde Normalverteilung der Residuen hin, mit lediglich geringen Abweichungen in den Randbereichen.
-Hinweise auf Heteroskedastizität waren nur schwach ausgeprägt und wurden als unkritisch bewertet.
-Zudem ergaben sich keine Hinweise auf stark einflussreiche Beobachtungen.
+→ The relationship between stress and wellbeing appears stable across groups.
 
+## Model Diagnostics
+Model assumptions were evaluated using graphical diagnostics.
+Residuals showed no systematic patterns → linearity assumption met
+Q-Q plot indicated approximately normal distribution of residuals
+Only minor indications of heteroskedasticity
+No evidence of influential outliers
+
+Overall, model assumptions were considered adequately satisfied.
 ![Diagnostik](plots/diagnostic_plots.png)
 
-## Standardisierung
-Zur besseren Vergleichbarkeit der Effekte wurden alle kontinuierlichen Variablen (Stress, Schlafdauer, Schlafqualität und Wohlbefinden) standardisiert (z-Transformation).
+## Standardization
+To improve comparability of effects, all continuous variables were standardized (z-transformation).
+This transformation results in variables with:
+Mean = 0
+Standard deviation = 1
+This allows for direct comparison of effect sizes:
+Stress (β = -0.63) → strongest effect
+Sleep quality (β = 0.34) → moderate effect
+Sleep duration (β = 0.30) → slightly smaller effect
 
-Dabei wurden die Variablen so transformiert, dass sie einen Mittelwert von 0 und eine Standardabweichung von 1 aufweisen. 
-Durch die Standardisierung wird insbesondere der Vergleich der relativen Bedeutung der Prädiktoren innerhalb des Modells erleichtert.
-Stress (β = -0.63) → stärkster Effekt
-Schlafqualität (β = 0.34) → mittlerer Effekt
-Schlafdauer (β = 0.30) → etwas schwächer
+## Conclusion
+The results suggest that stress has a strong negative impact on subjective wellbeing, while sleep—both in terms of duration and quality—contributes positively.
+These relationships remain stable across age and gender, indicating robust effects within the dataset.
 
-## Fazit
-Die Ergebnisse zeigen, dass insbesondere Stress einen starken Einfluss auf das subjektive Wohlbefinden hat, während Schlaf – sowohl in Dauer als auch Qualität – einen positiven Beitrag leistet.
-Die Zusammenhänge bleiben unabhängig von Alter und Geschlecht stabil, was auf robuste Effekte innerhalb des Datensatzes hindeutet.
+## Limitations
+Simulated dataset
+No causal conclusions can be drawn
+No item-based scales (no reliability analysis)
 
-## Limitationen
-•	Simulierter Datensatz
-•	Keine kausalen Schlussfolgerungen möglich
-•	Keine Item-basierten Skalen (keine Reliabilitätsanalyse)
+## Future Directions
+Future projects could include:
+Analysis of item-level data
+Scale construction and reliability analysis (e.g., Cronbach’s alpha)
+Factor analysis (EFA / CFA)
 
-## Ausblick
-Zukünftige Projekte könnten beinhalten:
-•	Analyse von Item-Daten
-•	Skalenkonstruktion und Reliabilitätsprüfung (z. B. Cronbach’s Alpha)
-•	Faktorenanalysen (EFA / CFA)
-
-## Verwendete Tools
-•	R
-
+## Tools Used
+R
