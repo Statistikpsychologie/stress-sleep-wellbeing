@@ -16,8 +16,8 @@ No missing values were found. Some outliers were detected but remained within a 
 
 ### Regression Analysis
 A multiple linear regression was conducted to examine predictors of wellbeing.
-Dependent variable: Wellbeing
-Independent variables: Stress, sleep duration, sleep quality
+- **Dependent variable:** Wellbeing
+- **Independent variables:** Stress, sleep duration, sleep quality
 
 ### Moderation Analysis
 It was further tested whether the relationship between stress and wellbeing is moderated by:
