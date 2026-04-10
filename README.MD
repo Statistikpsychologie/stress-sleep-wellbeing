@@ -29,10 +29,10 @@ Interaction terms were included in the regression models.
 ## Results
 ### Correlations
 - Strong negative relationship between stress and wellbeing
-![Stress und Wohlbefinden](plots/stress_wellbeing.png)
+![stress and wellbeing](plots/stress_wellbeing.png)
 
 - Moderate positive relationship between sleep quality and wellbeing
-![Schlafqualität und Wohlbefinden](plots/sleep_quality_wellbeing.png)
+![sleep quality and wellbeing](plots/sleep_quality_wellbeing.png)
 
 - Weaker positive relationship between sleep duration and wellbeing
 
@@ -57,7 +57,7 @@ Model assumptions were evaluated using graphical diagnostics.
 - No evidence of influential outliers
 
 Overall, model assumptions were considered adequately satisfied.
-![Diagnostik](plots/diagnostic_plots.png)
+![model diagnostics](plots/diagnostic_plots.png)
 
 ## Standardization
 To improve comparability of effects, all continuous variables were standardized (z-transformation).
