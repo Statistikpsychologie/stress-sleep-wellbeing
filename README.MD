@@ -50,14 +50,21 @@ Visualizations support these relationships.
 → The relationship between stress and wellbeing appears stable across groups.
 
 ## Model Diagnostics
-Model assumptions were evaluated using graphical diagnostics.
-- Residuals showed no systematic patterns → linearity assumption met
-- Q-Q plot indicated approximately normal distribution of residuals
-- Only minor indications of heteroskedasticity
-- No evidence of influential outliers
 
-Overall, model assumptions were considered adequately satisfied.
-![model diagnostics](plots/diagnostic_plots.png)
+Model assumptions were evaluated using graphical diagnostics.
+
+- Residuals vs. Fitted plot showed no systematic patterns, supporting the assumption of linearity.
+- The Normal Q-Q plot indicated that the residuals were approximately normally distributed.
+- Only minor indications of heteroskedasticity were observed.
+- No evidence of influential outliers was found.
+
+Overall, the model assumptions were considered to be adequately satisfied.
+
+### Residuals vs. Fitted
+![Residuals vs. Fitted](plots/residuals_vs_fitted.png)
+
+### Normal Q-Q Plot
+![Normal Q-Q Plot](plots/qq_plot.png)
 
 ## Standardization
 To improve comparability of effects, all continuous variables were standardized (z-transformation).
